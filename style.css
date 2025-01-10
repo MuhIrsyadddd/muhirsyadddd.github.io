@@ -1,0 +1,54 @@
+/* Reset dasar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Tinggi layar penuh */
+    background-color: #f4f4f9;
+}
+
+/* Kontainer untuk teks dan gambar */
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    text-align: left;
+}
+
+/* Gaya teks */
+.text-content {
+    margin-right: 20px; /* Jarak antara teks dan gambar */
+    display: flex;
+    flex-direction: column; /* Tata letak vertikal untuk teks dan tombol */
+}
+
+/* Gaya gambar */
+.image {
+    width: 150px; /* Ukuran gambar */
+    height: 150px;
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    object-fit: cover; /* Menyesuaikan gambar */
+    border: 2px solid #0078D7;
+}
+
+/* Gaya tombol */
+.cv-button {
+    margin-top: 20px; /* Jarak tombol dari paragraf */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0078D7; /* Warna biru */
+    border: none;
+    border-radius: 100px;
+    width: 150px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Gaya hover tombol */
+.cv-button:hover {
+    background-color: #005bb5; /* Warna saat hover */
+}
