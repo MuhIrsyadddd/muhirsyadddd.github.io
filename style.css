@@ -1,54 +1,75 @@
-/* Reset dasar */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Tinggi layar penuh */
-    background-color: #f4f4f9;
+/* Navbar styling */
+.navbar {
+    background-color: #ffff; /* Warna latar belakang navbar */
+    padding: 10px 20px; /* Padding untuk navbar */
 }
 
-/* Kontainer untuk teks dan gambar */
+.navbar-container {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: space-between; /* Mengatur jarak antara logo dan menu */
+    align-items: center; /* Menyelaraskan elemen di tengah secara vertikal */
+}
+
+.logo {
+    color: rgb(8, 0, 0); /* Warna teks logo */
+    font-size: 24px; /* Ukuran font untuk logo */
+}
+
+.navbar-list {
+    list-style: none; /* Menghapus bullet points dari daftar */
+    margin: 0; /* Menghapus margin dari daftar */
+    padding: 0; /* Menghapus padding dari daftar */
+    display: flex; /* Menggunakan flexbox untuk daftar */
+}
+
+.navbar-list li {
+    margin-left: 20px; /* Jarak antar item menu */
+}
+
+.navbar-list a {
+    color: rgb(15, 1, 1); /* Warna teks tautan */
+    text-decoration: none; /* Menghapus garis bawah pada tautan */
+}
+
+.navbar-list a:hover {
+    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+}
+
+/* Container untuk Home Section */
 .container {
-    display: flex;
-    align-items: center;
-    max-width: 800px;
-    text-align: left;
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    align-items: center; /* Menyelaraskan elemen di tengah secara vertikal */
+    justify-content: center; /* Menyelaraskan elemen di tengah secara horizontal */
+    padding: 50px 20px; /* Padding atas dan bawah untuk memberi ruang */
+    min-height: 100vh; /* Memastikan Home Section mengambil minimal tinggi layar */
 }
 
-/* Gaya teks */
+/* Styling untuk text-content di Home Section */
 .text-content {
-    margin-right: 20px; /* Jarak antara teks dan gambar */
-    display: flex;
-    flex-direction: column; /* Tata letak vertikal untuk teks dan tombol */
+    max-width: 600px; /* Mengatur lebar maksimum untuk teks */
+    margin-right: 20px; /* Memberikan jarak antara teks dan gambar */
 }
 
-/* Gaya gambar */
+/* Gaya untuk tombol CV */
+.cv-button {
+    background-color: #007BFF; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghapus border */
+    padding: 10px 20px; /* Padding untuk tombol */
+    border-radius: 5px; /* Menambahkan sudut melingkar pada tombol */
+    cursor: pointer; /* Mengubah cursor saat hover */
+    font-size: 16px; /* Ukuran font tombol */
+}
+
+.cv-button:hover {
+    background-color: #0056b3; /* Mengubah warna latar belakang saat hover */
+}
+
+/* Gaya untuk gambar di Home Section */
 .image {
-    width: 150px; /* Ukuran gambar */
-    height: 150px;
+    width: 300px; /* Ukuran gambar */
+    height: 300px;
     border-radius: 50%; /* Membuat gambar menjadi lingkaran */
     object-fit: cover; /* Menyesuaikan gambar */
     border: 2px solid #0078D7;
-}
-
-/* Gaya tombol */
-.cv-button {
-    margin-top: 20px; /* Jarak tombol dari paragraf */
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #0078D7; /* Warna biru */
-    border: none;
-    border-radius: 100px;
-    width: 150px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-/* Gaya hover tombol */
-.cv-button:hover {
-    background-color: #005bb5; /* Warna saat hover */
 }
