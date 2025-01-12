@@ -1,6 +1,10 @@
+body {
+    background: #1f242d;
+}
+
+
 /* Navbar styling */
 .navbar {
-    background-color: #ffff; /* Warna latar belakang navbar */
     padding: 10px 20px; /* Padding untuk navbar */
 }
 
@@ -11,8 +15,21 @@
 }
 
 .logo {
-    color: rgb(8, 0, 0); /* Warna teks logo */
+    color: rgb(242, 242, 242); /* Warna teks logo */
     font-size: 24px; /* Ukuran font untuk logo */
+    animation: slideRight 1s ease forwards;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .navbar-list {
@@ -20,6 +37,20 @@
     margin: 0; /* Menghapus margin dari daftar */
     padding: 0; /* Menghapus padding dari daftar */
     display: flex; /* Menggunakan flexbox untuk daftar */
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .navbar-list li {
@@ -27,7 +58,7 @@
 }
 
 .navbar-list a {
-    color: rgb(15, 1, 1); /* Warna teks tautan */
+    color: rgb(255, 255, 255); /* Warna teks tautan */
     text-decoration: none; /* Menghapus garis bawah pada tautan */
 }
 
@@ -46,23 +77,56 @@
 
 /* Styling untuk text-content di Home Section */
 .text-content {
-    max-width: 600px; /* Mengatur lebar maksimum untuk teks */
+    max-width: 800px; /* Mengatur lebar maksimum untuk teks */
     margin-right: 20px; /* Memberikan jarak antara teks dan gambar */
 }
 
+.text-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(255, 255, 255); /* Warna teks tautan */
+}
+
+.text-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+}
+
+.text-content h3 span {
+    color: #0ef;
+}
+
+.text-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -10px 0;
+    color: rgb(255, 255, 255); /* Warna teks tautan */
+}
+
+.text-content p {
+    font-size: 16px;
+    color: rgb(255, 255, 255); /* Warna teks tautan */
+}
+
+
+
+
+
 /* Gaya untuk tombol CV */
 .cv-button {
-    background-color: #007BFF; /* Warna latar belakang tombol */
-    color: white; /* Warna teks tombol */
-    border: none; /* Menghapus border */
-    padding: 10px 20px; /* Padding untuk tombol */
-    border-radius: 5px; /* Menambahkan sudut melingkar pada tombol */
-    cursor: pointer; /* Mengubah cursor saat hover */
-    font-size: 16px; /* Ukuran font tombol */
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #1f242d;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .cv-button:hover {
-    background-color: #0056b3; /* Mengubah warna latar belakang saat hover */
+    background-color: rgb(178, 4, 4); /* Mengubah warna latar belakang saat hover */
 }
 
 /* Gaya untuk gambar di Home Section */
