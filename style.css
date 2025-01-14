@@ -159,3 +159,106 @@ body {
     object-fit: cover; /* Menyesuaikan gambar */
     border: 2px solid #0078D7;
 }
+
+/* Media Queries untuk perangkat seluler */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar-container {
+        flex-direction: column; /* Navbar menjadi kolom */
+        align-items: flex-start;
+    }
+
+    .navbar-list {
+        flex-direction: column; /* Daftar menu menjadi vertikal */
+        margin-top: 10px;
+    }
+
+    .navbar-list li {
+        margin: 10px 0; /* Menambahkan jarak antar item menu */
+    }
+
+    .navbar-list a {
+        font-size: 18px; /* Ukuran font lebih kecil untuk perangkat kecil */
+    }
+
+    /* Container Home Section */
+    .container {
+        flex-direction: column; /* Susunan teks dan gambar menjadi vertikal */
+        text-align: center; /* Teks rata tengah */
+    }
+
+    .text-content {
+        margin-right: 0; /* Menghapus jarak antara teks dan gambar */
+        margin-bottom: 20px; /* Menambahkan jarak di bawah teks */
+    }
+
+    .text-content h1 {
+        font-size: 40px; /* Ukuran font lebih kecil */
+    }
+
+    .text-content h3 {
+        font-size: 24px; /* Ukuran font lebih kecil */
+    }
+
+    .text-content p {
+        font-size: 14px; /* Ukuran font lebih kecil */
+    }
+
+    /* Gambar di Home Section */
+    .image {
+        width: 200px; /* Ukuran gambar lebih kecil */
+        height: 200px;
+    }
+
+    /* Social Media Icons */
+    .social-media a {
+        width: 3rem; /* Ikon lebih kecil */
+        height: 3rem;
+        font-size: 1.5rem;
+        margin: 1rem 1rem 1rem 0;
+    }
+
+    /* Tombol CV */
+    .cv-button {
+        padding: 10px 20px; /* Ukuran padding lebih kecil */
+        font-size: 14px; /* Ukuran font lebih kecil */
+    }
+
+    /* Section lainnya */
+    #about, #project, #contact {
+        padding: 30px 10px; /* Padding lebih kecil */
+        text-align: center; /* Teks rata tengah */
+    }
+
+    #about .text-content,
+    #project .text-content,
+    #contact .text-content {
+        max-width: 100%; /* Memaksimalkan lebar */
+    }
+}
+
+/* Media Queries untuk perangkat sangat kecil (misalnya ponsel lama) */
+@media (max-width: 480px) {
+    .text-content h1 {
+        font-size: 32px; /* Ukuran font lebih kecil untuk perangkat sangat kecil */
+    }
+
+    .text-content h3 {
+        font-size: 20px;
+    }
+
+    .text-content p {
+        font-size: 12px;
+    }
+
+    .social-media a {
+        width: 2.5rem; /* Ikon lebih kecil lagi */
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
+
+    .cv-button {
+        padding: 8px 16px; /* Ukuran padding lebih kecil lagi */
+        font-size: 12px;
+    }
+}
