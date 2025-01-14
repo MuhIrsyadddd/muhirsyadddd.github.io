@@ -163,6 +163,20 @@ body {
     border: 2px solid #0078D7;
 }
 
+/* Gaya untuk tombol menu burger */
+.menu-toggle {
+    display: none; /* Sembunyikan secara default */
+    position: absolute; /* Gunakan posisi absolut */
+    top: 10px; /* Sesuaikan posisi vertikal */
+    right: 20px; /* Geser ke kanan */
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: rgb(242, 242, 242);
+    cursor: pointer;
+}
+
+
 /* Media Queries untuk perangkat seluler */
 @media (max-width: 768px) {
     /* Navbar */
@@ -171,13 +185,27 @@ body {
         align-items: flex-start;
     }
 
+    .menu-toggle {
+        display: block; /* Tampilkan tombol menu pada perangkat kecil */
+    }
+
     .navbar-list {
-        flex-direction: column; /* Daftar menu menjadi vertikal */
-        margin-top: 10px;
+        display: none; /* Sembunyikan menu awalnya */
+        flex-direction: column; /* Menu menjadi vertikal */
+        position: absolute;
+        top: 60px; /* Sesuaikan posisi */
+        right: 20px; /* Sesuaikan posisi */
+        background-color: #1f242d;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .navbar-list.active {
+        display: flex; /* Tampilkan menu saat diaktifkan */
     }
 
     .navbar-list li {
-        margin: 10px 0; /* Menambahkan jarak antar item menu */
+        margin: 10px 0; /* Jarak antar item */
     }
 
     .navbar-list a {
@@ -239,6 +267,7 @@ body {
         max-width: 100%; /* Memaksimalkan lebar */
     }
 }
+
 
 /* Media Queries untuk perangkat sangat kecil (misalnya ponsel lama) */
 @media (max-width: 480px) {
