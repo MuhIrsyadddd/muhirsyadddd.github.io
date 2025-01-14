@@ -109,6 +109,26 @@ body {
     color: rgb(255, 255, 255); /* Warna teks tautan */
 }
 
+:root {
+    --main-color: #0ef; /* Ganti dengan warna yang Anda inginkan */
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color); /* Border menggunakan warna variabel */
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color); /* Warna ikon */
+    margin: 3rem 1.5rem 3rem 0;
+    text-decoration: none; /* Hilangkan garis bawah */
+}
+
+
 
 
 
