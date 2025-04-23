@@ -65,7 +65,7 @@ body {
 }
 
 .navbar-list a:hover {
-    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+    text-decoration: none; /* Pastikan garis bawah tetap tidak muncul saat hover */
 }
 
 /* Container untuk Home Section */
@@ -365,6 +365,17 @@ contact-form textarea {
     font-size: 2.5rem; /* Ukuran font */
     color: #fff; /* Warna teks */
     margin-bottom: 30px; /* Jarak bawah */
+}
+
+/* Tambahkan jarak antar section */
+section {
+    padding: 100px 20px; /* Tambahkan padding atas dan bawah */
+    min-height: 100vh; /* Pastikan setiap section memiliki tinggi minimal 1 layar penuh */
+    display: flex; /* Gunakan flexbox untuk tata letak */
+    flex-direction: column; /* Tata letak vertikal */
+    justify-content: center; /* Pusatkan konten secara vertikal */
+    align-items: center; /* Pusatkan konten secara horizontal */
+    box-sizing: border-box; /* Pastikan padding dihitung dalam ukuran elemen */
 }
 
 /* Media Queries untuk perangkat seluler */
