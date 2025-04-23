@@ -225,6 +225,31 @@ body {
     border-radius: 10px;
 }
 
+/* Styling untuk keterangan di project box */
+.project-layer h4 {
+    color: #fff; /* Warna putih untuk judul */
+    font-size: 20px; /* Sesuaikan ukuran font */
+    margin-bottom: 10px;
+}
+
+.project-layer p {
+    color: #fff; /* Warna putih untuk deskripsi */
+    font-size: 14px; /* Sesuaikan ukuran font */
+    text-align: center; /* Pusatkan teks */
+    margin-bottom: 20px;
+}
+
+/* Styling untuk ikon link */
+.project-layer a i {
+    color: #0ef; /* Warna ikon link */
+    font-size: 24px; /* Sesuaikan ukuran ikon */
+    transition: transform 0.3s ease; /* Animasi saat hover */
+}
+
+.project-layer a i:hover {
+    transform: scale(1.2); /* Perbesar ikon saat hover */
+}
+
 /* Styling untuk Contact Section */
 #contact {
     background: #1f242d;
