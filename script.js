@@ -30,4 +30,3 @@ function redirectAfterSubmit() {
     }, 1000); // Tunggu 1 detik sebelum redirect
     return true; // Izinkan form untuk dikirim ke Formspree
 }
-
