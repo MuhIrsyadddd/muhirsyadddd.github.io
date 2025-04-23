@@ -467,6 +467,17 @@ section {
     #contact .text-content {
         max-width: 100%; /* Memaksimalkan lebar */
     }
+
+    .about-container {
+        flex-direction: column; /* Susun kotak secara vertikal */
+        align-items: center; /* Pusatkan kotak secara horizontal */
+        gap: 20px; /* Jarak antar kotak */
+    }
+
+    .about-box {
+        width: 100%; /* Lebar penuh untuk perangkat kecil */
+        max-width: 300px; /* Batas lebar maksimum */
+    }
 }
 
 
