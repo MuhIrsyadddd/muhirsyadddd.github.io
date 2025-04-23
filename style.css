@@ -177,6 +177,124 @@ body {
 }
 
 
+.heading span {
+    color: #0ef;
+}
+
+.project {
+    background: var(--second-bg-color);
+}
+
+/* Styling untuk heading di bagian project */
+.project h2 {
+    text-align: center; /* Pusatkan teks */
+    font-size: 2rem; /* Sesuaikan ukuran font */
+    margin-bottom: 20px; /* Tambahkan jarak bawah */
+    color: #fff; /* Warna teks */
+}
+
+.project h2{
+    margin-bottom: 4rem;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom dalam satu baris */
+    gap: 20px; /* Jarak antar elemen */
+    justify-content: center;
+    align-items: center;
+    max-width: 900px; /* Batas lebar agar tidak terlalu besar */
+    margin: auto; /* Tengah secara horizontal */
+}
+
+.project-box {
+    background: #2c2f3f;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+}
+
+.project-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Styling untuk Contact Section */
+#contact {
+    background: #1f242d;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#contact h1 span {
+    color: #0ef;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    background: #2c2f3f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form .form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #1f242d;
+    color: #fff;
+    font-size: 14px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+contact-form textarea {
+    resize: none;
+}
+
+.contact-form .send-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0ef;
+    color: #1f242d;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form .send-button:hover {
+    background: #0078D7;
+    color: #fff;
+}
+
 /* Media Queries untuk perangkat seluler */
 @media (max-width: 768px) {
     /* Navbar */

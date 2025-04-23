@@ -23,3 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+function redirectAfterSubmit() {
+    alert("Your message has been sent successfully!");
+    setTimeout(() => {
+        window.location.href = "index.html"; // Redirect ke halaman index.html setelah beberapa detik
+    }, 1000); // Tunggu 1 detik sebelum redirect
+    return true; // Izinkan form untuk dikirim ke Formspree
+}
+
